@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce - Inicio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+   
+    <style>
+        /* puedo poner el incrustado aqui */
+span{
+color:#037bc0
+}
+
+.miPrimeraClase{
+    font-size:xx-large;
+}
+
+.hero-image {
+background-image: url("img/principal.jpg")
+}
+
+.hero-text {
+text-align: center;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: white;
+}
+
+.producto{
+background-color: #037bc0;
+text-align: center;
+color: white;
+}
+
+.producto img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+span1{
+color:white;
+}
+
+h1{
+text-align: center;
+font-size: 3.5rem;
+font-weight: lighter;
+}
+
+h2{
+text-align: center;
+font-size: 3rem;
+}
+
+h3{
+text-align: center;
+font-size: 2.5rem;
+}
+
+h4{
+text-align: center;
+font-size: 2.5rem;
+}
+
+h5{
+text-align: center;
+font-size: 2rem;
+}
+
+.product-image {
+background: url("img/producto1.jpg")no-repeat center center;
+background-size: cover;
+min-height: 100vh;
+}
+
+.product-info {
+background-color: #007bff;
+color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+text-align: center;
+padding: 2rem;
+}
+
+.product-card {
+background-color: #007bff;
+color: white;
+padding: 2rem;
+text-align: center;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.product-img {
+width: 100%;
+height: auto;
+display: block;
+}
+
+.price {
+font-size: 1.5rem;
+margin: 1rem 0;
+}
+
+.btn {
+padding: 0.75rem 2rem;
+font-weight: bold;
+background-color: #5DE23C;
+text-align: justify;
+margin: auto;
+justify-content: center;
+align-items: center;
+ }
+
+.product-card1 {
+text-align: center;
+background-color: #eaf2ff;
+padding: 10px;
+font-weight: 500;
+color: #007bff;
+}
+
+.gray-row {
+background-color: #3F3F3F;
+padding: 40px 20px;
+}
+
+.gray-row ul {
+list-style: none;
+padding-left: 0;
+}
+
+.gray-row li {
+color: #fff;
+margin-bottom: 10px;
+text-align: center;
+font-size: 1.2rem;
+}
+
+.black-row {
+background-color: black;
+padding: 40px 20px;
+text-align: center;
+}
+
+.navbar-custom {
+background-color: #007bc7; 
+text-align: center;
+justify-content: center;
+}
+
+.logo {
+background-color: #007bc7;
+padding: 10px 20px;
+color: black;
+font-weight: bold;
+text-align: center;
+}
+
+.btn2 {
+padding: 0.75rem 2rem;
+font-weight: bold;
+background-color: #007bc7;
+text-align: justify;
+margin: auto;
+justify-content: center;
+align-items: center;
+color: white;
+border-color: white;
+}
+
+    </style>
+
+</head>
+    <body>
+        <header>
+        <h1>Tienda de <span>Muebles</span></h1>
+        </header>
+
+<!-- Barra de navegacion -->
+ <nav class="navbar navbar-expand-lg navbar-custom">
+  <div class="container-fluid">
+    <a class="navbar-brand logo" href="#">Logo</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Tienda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Galería</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Contacto</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Búsqueda" aria-label="Search">
+        <button class="btn2 btn-outline-light rounded" type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- Producto 1 y portada -->
+        <section>
+            <div class="hero-image">
+                <img src="img/principal.jpg" alt="">
+                <div class="hero-text">Tienda de muebles con Bootstrap</div>
+            </div>
+            
+        </section>
+<main>
+    <h2>Nuestros Productos</h2>    
+    <section class="mb-5">
+        <article>
+            <div class="container-fluid">
+                <div class="row g-0">
+                  <div class="col-md-6 product-image">
+                  </div>
+                  <div class="col-md-6 product-info">
+                    <div>
+                      <h2>VersaRoom: Doble Función, Máximo Confort</h2>
+                      <p>Convierte tu espacio personal en un entorno versátil y productivo con nuestro diseño de dormitorio oficina. Este ambiente combina la comodidad de un dormitorio acogedor con la practicidad de una oficina moderna, ideal para quienes trabajan desde casa o buscan un rincón tranquilo para concentrarse.</p>
+                      <div class="price">$70,000</div>
+                      <button class="btn">Conocer mas</button>
+                    </div>
+                </div>
+            </div>        
+        </article>
+    </section>
+<!-- Productos 2 y 3 -->
+    <section class="mb-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="bg-white full-height">
+                  <img src="img/producto2.jpg" alt="Producto 1" class="product-img">
+                  <div class="product-card">
+                    <h3>Sala Nova: Elegancia y Confort en Cada Detalle</h3>
+                    <p>Descubre una sala de estar moderna pensada para ofrecer estilo, funcionalidad y bienestar en un solo espacio. Con un diseño limpio, líneas minimalistas y una paleta de colores neutros y cálidos, este ambiente se adapta perfectamente a un estilo de vida actual y dinámico.</p>
+                    <div class="price">$35,000</div>
+                    <button class="btn">Conocer mas</button>
+                    </div>
+                </div>
+            </div>        
+            <div class="col-md-6">
+                <div class="bg-white flex-fill">
+                  <img src="img/producto3.jpg" alt="Producto 2" class="product-img">
+                    <div class="product-card">
+                    <h3>Habitación Aura: Estilo Contemporáneo para Tu Descanso</h3>
+                    <p>Ofrece un equilibrio perfecto entre diseño y confort, esta recámara transforma tu espacio en un refugio elegante y funcional. Con líneas limpias, mobiliario minimalista y una cuidada selección de materiales, esta habitación crea una atmósfera serena que invita al descanso.</p>
+                    <div class="price">$50,000</div>
+                    <button class="btn">Conocer mas</button>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </section>
+<!-- productos 3, 4 y 5 -->
+    <section>
+        <article>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="bg-white full-height">
+                      <img src="img/galeria_07.jpg" alt="Producto 3" class="product-img">
+                      <div class="product-card">
+                        <h5>Dining Concept: Diseño Elegante y Convivencia</h5>
+                        <p>El comedor moderno es mucho más que un lugar para comer: es un punto de encuentro, una expresión de estilo y el escenario de momentos memorables. Con un diseño contemporáneo, materiales de calidad y líneas limpias, este espacio combina estética y funcionalidad para adaptarse a la vida actual.</p>
+                        <div class="price">$40,000</div>
+                        <button class="btn">Conocer mas</button>
+                        </div>
+                    </div>
+                </div>        
+                <div class="col-md-4">
+                    <div class="bg-white flex-fill">
+                      <img src="img/galeria_08.jpg" alt="Producto 4" class="product-img">
+                        <div class="product-card">
+                        <h5>Lounge TV: Comodidad y Entretenimiento</h5>
+                        <p>Disfrutar del mejor entretenimiento con el máximo confort, el cuarto de tele es ese rincón especial del hogar donde la funcionalidad se encuentra con el estilo. Con un enfoque relajado y moderno, este espacio está pensado para maratones de series, tardes de películas o simplemente desconectarse del mundo exterior.</p>
+                        <div class="price">$27,000</div>
+                        <button class="btn">Conocer mas</button>
+                        </div>
+                    </div>
+                </div>        
+                <div class="col-md-4">
+                    <div class="bg-white flex-fill">
+                      <img src="img/galeria_09.jpg" alt="Producto 4" class="product-img">
+                        <div class="product-card">
+                        <h5>Worknest: Inspiración y Productividad en un Entorno</h5>
+                        <p>El estudio moderno es un espacio diseñado para fomentar la concentración, la creatividad y la eficiencia, sin renunciar al estilo. Con una estética limpia y actual, este ambiente combina funcionalidad y diseño en perfecta armonía, ideal para trabajar desde casa, estudiar o desarrollar proyectos personales.</p>
+                        <div class="price">$18,000</div>
+                        <button class="btn">Conocer mas</button>
+                    </div>       
+                    </div>
+                </div>   
+        </article>
+    </section>
+        </article>
+    </section>
+<!-- Categorias -->
+    <section>
+        <article>
+            <h2>Categorias</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="bg-white full-height">
+                      <img src="img/categoria1.jpg" alt="Oficina" class="product-img">
+                      <div class="product-card1">
+                        <a href="#"></a>
+                        <h4>Oficina </h4>
+                        </div>
+                    </div>
+                </div>        
+                <div class="col-md-4">
+                    <div class="bg-white flex-fill">
+                      <img src="img/categoria2.jpg" alt="Hogar" class="product-img">
+                        <div class="product-card1">
+                        <a href="#"></a>
+                        <h4>Hogar</h4>
+                        </div>
+                    </div>
+                </div>        
+                <div class="col-md-4">
+                    <div class="bg-white flex-fill">
+                      <img src="img/categoria3.jpg" alt="Cocina" class="product-img">
+                        <div class="product-card1">
+                        <a href="#"></a>
+                        <h4>Cocina</h4>
+                    </div>       
+                    </div>
+                </div>   
+        </article>
+    </section>
+<!-- footer -->
+    <section> 
+        <article>
+            <div class="container-fluid gray-row">
+                <div class="row text-white">
+                    <div class="col-md-4">
+                    <h4>Categorias</h4>
+                     <ul>
+                    <li>Cocina</li><a href="#"></a>
+                    <li>Oficina</li><a href="#"></a>
+                    <li>Jardin</li><a href="#"></a>
+                    <li>Cochera</li><a href="#"></a>
+                    <li>Dormitorios</li><a href="#"></a>
+                    </ul>
+                    </div>
+                    <div class="col-md-4">
+                    <h4>Sobre Nosotros</h4>
+                    <ul>
+                    <li>Nuestra historia</li><a href="#"></a>
+                    <li>Mision</li><a href="#"></a>
+                    <li>Vision</li><a href="#"></a>
+                    <li>Valores</li><a href="#"></a>
+                    <li>Carrera</li><a href="#"></a>
+                    <li>Politicas de privacidad</li><a href="#"></a>
+                    <li>Terminos del servicio</li><a href="#"></a>
+                    </ul>
+                    </div>
+                    <div class="col-md-4">
+                    <h4>Soporte</h4>
+                    <ul>
+                    <li>Preguntas frecuentes</li><a href="#"></a>
+                    <li>Ayuda en linea</li><a href="#"></a>
+                    <li>Confianza y seguridad</li><a href="#"></a>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid black-row">
+                <div class="row text-white">
+                    <div class="col-md-12">
+                        <p>&copy; 2023 Tienda de Muebles. Todos los derechos reservados.</p>
+                    </div>
+                </div>
+        </article>
+    </section>
+</main>
+</body>
+</html>
